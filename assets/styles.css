@@ -228,3 +228,17 @@ button:focus-visible { outline: 2px solid oklch(74% 0.13 180); outline-offset: 2
   .pw-scorebar i { transform: scaleX(0.82) !important; }
   .pw-mover, .pw-confetti { display: none; }
 }
+
+/* ---- Real alert from the live system ---- */
+.arch2-proof { display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, 340px); gap: 2.5rem 3.5rem; align-items: center; }
+.arch2-proof .arch2-shead { margin-bottom: 0; }
+.arch2-proof-list { list-style: none; margin: 1.5rem 0 0; padding: 0; display: flex; flex-direction: column; gap: 0.55rem; }
+.arch2-proof-list li { background: var(--bg-raise); border: 1px solid var(--line); border-left: 3px solid var(--rose); border-radius: 6px; padding: 0.6rem 0.9rem; font-size: 0.88rem; line-height: 1.5; color: var(--text-dim); }
+.arch2-proof-list li span { display: block; font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--rose); margin-bottom: 0.1rem; }
+.arch2-phone { margin: 0; justify-self: center; width: 100%; max-width: 340px; padding: 10px; background: var(--bg-raise2); border: 1px solid var(--line); border-radius: 30px; box-shadow: 0 24px 60px -24px oklch(0% 0 0 / 0.7), 0 0 0 1px oklch(100% 0 0 / 0.03) inset; }
+.arch2-phone img { display: block; width: 100%; height: auto; border-radius: 21px; background: #fff; }
+.arch2-phone figcaption { font-family: 'IBM Plex Mono', monospace; font-size: 0.66rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-dim2); text-align: center; padding: 0.7rem 0 0.2rem; }
+@media (max-width: 820px) {
+  .arch2-proof { grid-template-columns: 1fr; }
+  .arch2-phone { max-width: 320px; }
+}

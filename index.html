@@ -33,7 +33,7 @@
         the pieces actually fit together.
       </p>
       <div class="arch2-scope arch2-synthetic">
-        <strong>All data shown is synthetic.</strong> The live system runs privately on my own saved-search alerts.
+        <strong>All data in the walkthrough and diagrams is synthetic.</strong> The live system runs privately on my own saved-search alerts — the one real screenshot below is an actual alert from it, with address and links blurred.
       </div>
       <div class="arch2-scope">
         <strong>Scope note:</strong> the system has two halves. A scanner service —
@@ -43,6 +43,26 @@
         here end-to-end so the full design is visible in one place.
       </div>
     </header>
+
+    <!-- ── Real output from the live system ── -->
+    <div class="arch2-section arch2-proof">
+      <div class="arch2-shead">
+        <span class="arch2-kicker">In Production</span>
+        <h2>What actually lands on my phone</h2>
+        <p>A real Slack alert from the running system. When a listing clears an investment rule — here, positive cashflow — Boligbot posts the price, capital required, break-even rent, yield, interest-rate tolerance, distance to the nearest university, and the key condition-report findings pulled from the sales prospectus.</p>
+        <ul class="arch2-proof-list">
+          <li><span>Trigger</span>Matched rule: positive cashflow</li>
+          <li><span>Financial model</span>Capital required, break-even rent, yield, net cashflow, rate-hike tolerance</li>
+          <li><span>Geo enrichment</span>Nearest university and driving time</li>
+          <li><span>Document analysis</span>Condition grades and risk keywords from the salgsoppgave PDF</li>
+        </ul>
+      </div>
+      <figure class="arch2-phone">
+        <img src="assets/slack-alert.webp" width="922" height="1842" decoding="async"
+             alt="Slack message from Boligbot: a new listing in Kristiansund matching the positive-cashflow filter, with purchase price, capital required, break-even rent, estimated rent, yield, net cashflow, nearest university, and key findings from the sales prospectus. Address and links are blurred.">
+        <figcaption>Real alert &middot; address and links blurred</figcaption>
+      </figure>
+    </div>
 
     <!-- ── Live pipeline walkthrough ── -->
     <div class="arch2-section" id="pipewalk">
